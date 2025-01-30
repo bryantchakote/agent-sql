@@ -9,7 +9,15 @@ readme = "README.md"
 requires-python = "^3.13.1"
 dependencies = [
     "ipykernel (>=6.29.5,<7.0.0)",
-    "psycopg2-binary (>=2.9.10,<3.0.0)"
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "streamlit (>=1.41.1,<2.0.0)",
+    "sqlalchemy (>=2.0.37,<3.0.0)",
+    "langchain (>=0.3.17,<0.4.0)",
+    "langchain-community (>=0.3.16,<0.4.0)",
+    "langchainhub (>=0.1.21,<0.2.0)",
+    "langgraph (>=0.2.68,<0.3.0)",
+    "langchain-openai (>=0.3.3,<0.4.0)",
+    "langchain-deepseek-official (>=0.1.0,<0.2.0)",
 ]
 
 
