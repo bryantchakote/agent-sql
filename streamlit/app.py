@@ -71,3 +71,23 @@ if st.session_state.chat_history:
             st.code(chat["query"], language="sql")
         with st.expander("📊 Résultat"):
             st.code(chat["result"], language="txt")
+
+
+# Next steps
+# Sidebar avec les next steps
+st.sidebar.title("🛠️ Next Steps")
+
+next_steps = [
+    "Choix de la BD (+ BD externes)",
+    "Mémoire (+ SQLite / PostGre)",
+    "Dockeriser et déployer sur le Cloud",
+    "Système d'authentification",
+    "Gestion des fils de discussion",
+    "Suivi des logs",
+    "Tests et gestion des erreurs",
+    "Amélioration de l'UI",
+    "Limiter le nombre de résultats",
+]
+
+# Affichage sous forme de liste avec Markdown
+st.sidebar.write("\n".join(f"- {step}" for step in next_steps))
